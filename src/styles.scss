@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+//colors
+$primary-orange: #f39c12;
+$primary-black: #323232;
+
+//routerLinkActive
+.active__link {
+  color: $primary-orange !important;
+}
+
+html,
+body {
+  font-family: "Montserrat";
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("assets/fonts/Lobster-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DM Serif";
+  src: url("assets/fonts/DMSerifDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Regular.ttf");
+}
