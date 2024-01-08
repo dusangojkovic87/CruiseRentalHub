@@ -5,6 +5,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .bars {
+    position: absolute;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("/assets/icons/header/bars.svg");
+    cursor: pointer;
+    display: none;
+  }
+
   .main-logo-wrp {
     position: absolute;
     left: 20px;
@@ -29,6 +40,18 @@
 
   nav {
     ul {
+      position: relative;
+
+      .close__navbar {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background: url("/assets/icons/header/close.svg");
+        display: none;
+      }
       li {
         list-style: none;
         padding: 1rem;
@@ -90,6 +113,48 @@
         background: url("/assets/icons/header/lock.svg");
         margin-right: 4px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .header-container {
+    .bars {
+      display: block;
+    }
+
+    .main-logo-wrp {
+      .mainLogo {
+        display: none;
+      }
+
+      .main__logo__txt {
+        display: none;
+      }
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+
+      ul {
+        .close__navbar {
+          display: block;
+        }
+
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        background-color: rgb(222, 227, 228);
+        padding-top: 50px;
+        margin: 0;
+      }
+    }
+    .auth-btn-wrp {
+      width: 50%;
     }
   }
 }
