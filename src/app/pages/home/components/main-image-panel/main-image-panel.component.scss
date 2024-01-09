@@ -13,6 +13,25 @@
     width: 50%;
     height: 100%;
 
+    button {
+      margin-left: 1rem;
+      background-color: transparent;
+      font-family: "Monserrat";
+      font-size: 1rem;
+      padding: 0.5rem;
+      width: 150px;
+      cursor: pointer;
+      border: 2px solid $primary-black;
+      border-radius: 2px;
+      font-weight: 800;
+
+      &:hover {
+        background-color: $primary-orange;
+        color: white;
+        border: 2px solid $primary-orange;
+      }
+    }
+
     .img-wrp {
       position: relative;
       width: 100%;
@@ -65,5 +84,28 @@
     height: 20px;
     background: url("/assets/icons/mainImagePanel/thumbsUp.svg");
     margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .main-image-panel-container {
+    .main-image-text-wrp {
+      width: 100%;
+
+      p {
+        margin-left: 0;
+        padding: 1rem;
+      }
+    }
+
+    .right-side-img-wrp {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .main-image-panel-container {
+    height: 550px;
   }
 }
