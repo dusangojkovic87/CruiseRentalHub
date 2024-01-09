@@ -3,6 +3,8 @@
 //colors
 $primary-orange: #f39c12;
 $primary-black: #323232;
+$primary-light-grey: #c4c2c2;
+$primary-grey: #919090;
 
 //routerLinkActive
 .active__link {
@@ -11,8 +13,12 @@ $primary-black: #323232;
 
 html,
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Montserrat";
 }
+
+//fonts
 
 @font-face {
   font-family: "Lobster";
@@ -27,4 +33,9 @@ body {
 @font-face {
   font-family: "Montserrat";
   src: url("assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("assets/fonts/Oswald-Regular.ttf");
 }

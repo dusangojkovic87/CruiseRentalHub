@@ -1,0 +1,69 @@
+@import "../../../../../styles.scss";
+.main-image-panel-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("/assets/images/home/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  .main-image-item {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    .img-wrp {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(-1);
+        object-fit: contain;
+        z-index: -1;
+      }
+    }
+  }
+
+  .main-image-text-wrp {
+    h6 {
+      font-size: 1.1rem;
+      margin-left: 1rem;
+      color: $primary-light-grey;
+      font-style: italic;
+    }
+
+    h1:nth-child(1) {
+      color: $primary-orange;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px;
+      text-align: left;
+      font-family: "Oswald";
+    }
+
+    p {
+      color: $primary-grey;
+      text-align: justify;
+      margin-left: 1rem;
+    }
+  }
+
+  .thumbs__up__icon {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("/assets/icons/mainImagePanel/thumbsUp.svg");
+    margin-right: 5px;
+  }
+}
