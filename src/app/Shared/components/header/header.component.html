@@ -1,12 +1,12 @@
 <div class="header-container">
-  <span class="bars"></span>
+  <span class="bars" (click)="openNavbar()"></span>
   <div class="main-logo-wrp">
     <span class="mainLogo"></span>
     <p class="main__logo__txt">CruiseRentalHub</p>
   </div>
-  <nav>
+  <nav [ngClass]="{ navbar__open: isNavbarOpen$ | async }">
     <ul>
-      <span class="close__navbar"></span>
+      <span class="close__navbar" (click)="closeNavbar()"></span>
       <li routerLink="home" routerLinkActive="active__link">Home</li>
       <li routerLink="account" routerLinkActive="active__link">Account</li>
       <li routerLinkActive="active__link">Locations</li>
