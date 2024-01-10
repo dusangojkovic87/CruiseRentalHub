@@ -1,0 +1,93 @@
+@import "../../../../styles.scss";
+
+.booking-form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $primary-orange;
+  height: 60px;
+
+  z-index: 1;
+
+  form {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    top: 10px;
+
+    .label-wrp {
+      width: 15%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      border: 1px solid $primary-light-grey;
+      border-radius: 5px;
+      padding: 4px;
+
+      label {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .input-field-icon-wrp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .location__icon {
+          width: 20px;
+          height: 20px;
+          background: url("/assets/icons/bookingForm/location.svg");
+          display: inline-block;
+        }
+
+        input {
+          height: 30px;
+          width: 100%;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      width: 20%;
+      height: 50px;
+      cursor: pointer;
+      background-color: $primary-orange;
+      color: white;
+      border: 1px solid transparent;
+      border-radius: 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .booking-form-container {
+    height: 400px;
+    top: 80px;
+    form {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      border-radius: 0;
+
+      .label-wrp {
+        width: 80%;
+        margin: 1rem;
+      }
+
+      button {
+        width: 80%;
+      }
+    }
+  }
+}
