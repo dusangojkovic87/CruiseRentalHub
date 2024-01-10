@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
   background-color: $primary-orange;
   height: 60px;
 
@@ -23,70 +23,103 @@
     border-radius: 5px;
     top: 10px;
 
-    .label-wrp {
-      width: 15%;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      border: 1px solid $primary-light-grey;
-      border-radius: 5px;
-      padding: 4px;
+    .divider {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .label-wrp {
+        width: 30%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: 1px solid $primary-light-grey;
+        border-radius: 5px;
+        padding: 4px;
 
-      label {
-        font-size: 0.8rem;
-        font-weight: bold;
-      }
-
-      .input-field-icon-wrp {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .location__icon {
-          width: 20px;
-          height: 20px;
-          background: url("/assets/icons/bookingForm/location.svg");
-          display: inline-block;
+        label {
+          font-size: 0.8rem;
+          font-weight: bold;
         }
 
-        input {
-          height: 30px;
+        .input-field-icon-wrp {
           width: 100%;
-          border: none;
-          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .location__icon {
+            width: 20px;
+            height: 20px;
+            background: url("/assets/icons/bookingForm/location.svg");
+            display: inline-block;
+          }
+
+          input {
+            height: 30px;
+            width: 100%;
+            border: none;
+            outline: none;
+          }
         }
       }
-    }
 
-    button {
-      width: 20%;
-      height: 50px;
-      cursor: pointer;
-      background-color: $primary-orange;
-      color: white;
-      border: 1px solid transparent;
-      border-radius: 2px;
+      button {
+        width: 20%;
+        height: 50px;
+        cursor: pointer;
+        background-color: $primary-orange;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 2px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 1160px) {
   .booking-form-container {
-    height: 400px;
-    top: 80px;
+    height: 300px;
+    align-items: center;
     form {
       width: 100%;
       flex-direction: column;
       height: auto;
       border-radius: 0;
 
-      .label-wrp {
-        width: 80%;
-        margin: 1rem;
-      }
+      .divider {
+        width: 100%;
+        .label-wrp {
+          width: 80%;
+          margin: 1rem;
+        }
 
-      button {
-        width: 80%;
+        button {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .booking-form-container {
+    height: 400px;
+    top: 90px;
+    padding: 1rem;
+    height: auto;
+    top: 0;
+    form {
+      border-radius: 5px;
+      .divider {
+        flex-direction: column;
+
+        button {
+          width: 80%;
+          margin-top: 30px;
+        }
       }
     }
   }
