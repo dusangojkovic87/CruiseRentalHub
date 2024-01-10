@@ -8,7 +8,6 @@
   width: auto;
   background-color: $primary-orange;
   height: 60px;
-
   z-index: 1;
 
   form {
@@ -23,6 +22,9 @@
     border-radius: 5px;
     top: 10px;
     border: 1px solid $primary-light-grey;
+    -webkit-box-shadow: 11px 10px 39px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 10px 39px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 10px 39px -11px rgba(0, 0, 0, 0.75);
 
     .divider {
       position: relative;
