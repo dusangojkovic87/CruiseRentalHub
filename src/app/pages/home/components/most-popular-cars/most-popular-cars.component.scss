@@ -25,8 +25,10 @@
       li {
         list-style: none;
         padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         cursor: pointer;
-        width: 15%;
+        width: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,9 +91,12 @@
   }
 }
 
+//router active link
 .popularCarsActiveLink {
   background-color: $primary-blue;
   color: white;
+
+  //icons
 
   .audi__icon {
     content: url("/assets/icons/mostPopularCars/audi-white.svg");
@@ -107,5 +112,19 @@
 
   .volkswagen__icon {
     content: url("/assets/icons/mostPopularCars/volkswagen-white.svg");
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .most-popular-cars-container {
+    .car-selection-container {
+      ul {
+        flex-wrap: wrap;
+
+        li {
+          width: 100px;
+        }
+      }
+    }
   }
 }

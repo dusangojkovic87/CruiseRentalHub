@@ -7,7 +7,14 @@ export const routes: Routes = [
   {
     component: HomeComponent,
     path: '',
-    children: [{ component: PopularCarsListComponent, path: 'popular/:model' }],
+    children: [
+      {
+        path: '',
+        redirectTo: 'popular/bmw',
+        pathMatch: 'full',
+      },
+      { component: PopularCarsListComponent, path: 'popular/:model' },
+    ],
   },
   { component: HomeComponent, path: 'home' },
   { component: AccountComponent, path: 'account' },
