@@ -36,6 +36,8 @@
       .icon-wrp {
         padding: 1rem;
         border-radius: 50%;
+        border-style: dashed;
+        border-color: white;
         .pickLocation__icon {
           width: 40px;
           height: 40px;
@@ -67,6 +69,16 @@
         padding-left: 1rem;
         padding-right: 1rem;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .how-works-container {
+    height: auto;
+    .how-works-icon-wrp {
+      flex-direction: column;
+      margin: 1rem;
     }
   }
 }
