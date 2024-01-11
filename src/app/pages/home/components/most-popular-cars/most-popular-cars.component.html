@@ -1,0 +1,42 @@
+<div class="most-popular-cars-container">
+  <!--heading text wrrapper-->
+  <div class="heading-wrp">
+    <h6>Explore most popular Cars</h6>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam explicabo
+      natus asperiores eum, perferendis necessitatibus?
+    </p>
+  </div>
+  <!--end of heading-->
+  <!--car selection wrrapper-->
+  <div class="car-selection-container">
+    <ul>
+      <li
+        [routerLink]="['/popular', 'bmw']"
+        routerLinkActive="popularCarsActiveLink"
+      >
+        <span class="bmw__icon"></span>BMW
+      </li>
+      <li
+        [routerLink]="['/popular', 'audi']"
+        routerLinkActive="popularCarsActiveLink"
+      >
+        <span class="audi__icon"></span>Audi
+      </li>
+      <li
+        [routerLink]="['/popular', 'volkswagen']"
+        routerLinkActive="popularCarsActiveLink"
+      >
+        <span class="volkswagen__icon"></span>Volkswagen
+      </li>
+      <li
+        [routerLink]="['/popular', 'tesla']"
+        routerLinkActive="popularCarsActiveLink"
+      >
+        <span class="tesla__icon"></span>Tesla
+      </li>
+    </ul>
+  </div>
+  <!--car selection end-->
+  <router-outlet></router-outlet>
+</div>

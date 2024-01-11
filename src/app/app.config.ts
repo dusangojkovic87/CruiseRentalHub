@@ -1,4 +1,8 @@
-import { ApplicationConfig, isDevMode } from '@angular/core';
+import {
+  ApplicationConfig,
+  importProvidersFrom,
+  isDevMode,
+} from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -8,5 +12,11 @@ import { reducers } from './ApplicationStore/appStore';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideStore(reducers), provideEffects(), provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() })],
+  providers: [
+    provideRouter(routes),
+    provideStore(reducers),
+    provideEffects(),
+    provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
+    importProvidersFrom(),
+  ],
 };
