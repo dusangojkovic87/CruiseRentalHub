@@ -3,6 +3,7 @@ import { HeaderComponent } from '../../Shared/components/header/header.component
 import { MainImagePanelComponent } from './components/main-image-panel/main-image-panel.component';
 import { BookingFormComponent } from '../../Shared/components/booking-form/booking-form.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { MostPopularCarsComponent } from './components/most-popular-cars/most-popular-cars.component';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
     MainImagePanelComponent,
     BookingFormComponent,
     HowItWorksComponent,
+    MostPopularCarsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
