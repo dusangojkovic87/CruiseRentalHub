@@ -10,6 +10,7 @@ import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { reducers } from './ApplicationStore/appStore';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
+import { StarRatingModule } from 'angular-star-rating';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,6 +18,6 @@ export const appConfig: ApplicationConfig = {
     provideStore(reducers),
     provideEffects(),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
-    importProvidersFrom(),
+    importProvidersFrom(StarRatingModule.forRoot()),
   ],
 };
