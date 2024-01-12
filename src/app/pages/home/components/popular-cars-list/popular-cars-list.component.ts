@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { CarListItemComponent } from '../../../../Shared/components/car-list-item/car-list-item.component';
 ('angular-star-rating');
 
