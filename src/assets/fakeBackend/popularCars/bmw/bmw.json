@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Bmw",
+    "make": "Series 3",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/bmw/bmw.png"
+  },
+  {
+    "model": "Bmw",
+    "make": "X7",
+    "shiftType": "Manual",
+    "maxSpeed": "290km",
+    "year": "2011",
+    "capacity": 5,
+    "hourPrice": 220,
+    "gasType": "Petrol",
+    "location": "Los Angeles",
+    "mainImage": "assets/images/popular-cars/bmw/bmw-x7.jpg"
+  },
+  {
+    "model": "Bmw",
+    "make": "Z4",
+    "shiftType": "Manual",
+    "maxSpeed": "300km",
+    "year": "2017",
+    "capacity": 2,
+    "hourPrice": 280,
+    "gasType": "Petrol",
+    "location": "Los Angeles",
+    "mainImage": "assets/images/popular-cars/bmw/z4.jpg"
+  },
+  {
+    "model": "Bmw",
+    "make": "Series 7",
+    "shiftType": "Manual",
+    "maxSpeed": "270km",
+    "year": "2022",
+    "capacity": 2,
+    "hourPrice": 280,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/bmw/bmw-s7.jpg"
+  }
+]

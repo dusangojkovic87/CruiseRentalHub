@@ -8,4 +8,6 @@ import { RouterModule } from '@angular/router';
   templateUrl: './most-popular-cars.component.html',
   styleUrl: './most-popular-cars.component.scss',
 })
-export class MostPopularCarsComponent {}
+export class MostPopularCarsComponent {
+  constructor() {}
+}
