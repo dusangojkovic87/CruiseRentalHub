@@ -1,3 +1,4 @@
+import { selectPopularCars } from './../../../../ApplicationStore/most-popular-cars/selectors/popular-cars.selector';
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
@@ -8,7 +9,12 @@ import { CarListItemComponent } from '../../../../Shared/components/car-list-ite
 import { ActivatedRoute, Params } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { State } from '../../../../ApplicationStore/appStore';
-import { getBmwCars } from '../../../../ApplicationStore/most-popular-cars/actions/popularCars.actions';
+import {
+  getAudiCars,
+  getBmwCars,
+  getTeslaCars,
+  getVolkswagenCars,
+} from '../../../../ApplicationStore/most-popular-cars/actions/popularCars.actions';
 import { Observable } from 'rxjs';
 import { PopularCarsEffect } from '../../../../ApplicationStore/most-popular-cars/effects/popular-cars-effect';
 import { PopularCarsService } from '../../services/popular-cars.service';
@@ -25,9 +31,7 @@ import { Car } from '../../../../models/Car';
   providers: [PopularCarsEffect, PopularCarsService],
 })
 export class PopularCarsListComponent implements OnInit {
-  cars: Observable<Car[]> = this.store.select(
-    (state) => state.popularCarsState.cars
-  );
+  cars: Observable<Car[]> = this.store.select(selectPopularCars);
   constructor(private route: ActivatedRoute, private store: Store<State>) {}
 
   ngOnInit(): void {
@@ -36,22 +40,19 @@ export class PopularCarsListComponent implements OnInit {
 
       switch (model) {
         case 'bmw':
-          console.log('akcija za bmw');
-
           this.store.dispatch(getBmwCars());
-
           break;
         case 'audi':
-          console.log('akcija za audi');
+          this.store.dispatch(getAudiCars());
           break;
         case 'volkswagen':
-          console.log('akcija za volksvagen');
+          this.store.dispatch(getVolkswagenCars());
           break;
         case 'tesla':
-          console.log('akcija za teslu');
+          this.store.dispatch(getTeslaCars());
           break;
         default:
-          console.log('default akcija bmw');
+          this.store.dispatch(getBmwCars());
       }
     });
   }

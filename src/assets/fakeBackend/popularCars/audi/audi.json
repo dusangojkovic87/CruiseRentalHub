@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "model": "Audi",
+    "make": "A1",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/audi/audi-a1.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+  {
+    "id": 2,
+    "model": "Audi",
+    "make": "Q8",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/audi/audi-q8.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+  {
+    "id": 3,
+    "model": "Audi",
+    "make": "A6",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/audi/audi-a6.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+  {
+    "id": 4,
+    "model": "Audi",
+    "make": "R8",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/audi/audi-r8.jpg",
+    "rating": 3,
+    "engine": "basic"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "model": "Volkswagen",
+    "make": "Polo",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/volkswagen/polo.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+
+  {
+    "id": 2,
+    "model": "Volkswagen",
+    "make": "Scirocco",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/volkswagen/sciroco.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+
+  {
+    "id": 3,
+    "model": "Volkswagen",
+    "make": "Golf 7",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/volkswagen/golf7.jpg",
+    "rating": 3,
+    "engine": "basic"
+  },
+
+  {
+    "id": 4,
+    "model": "Volkswagen",
+    "make": "T Cross",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/volkswagen/t cross.jpg",
+    "rating": 3,
+    "engine": "basic"
+  }
+]

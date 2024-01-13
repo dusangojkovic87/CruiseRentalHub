@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "model": "Tesla",
+    "make": "3",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Electric",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/tesla/tesla-3.jpg",
+    "rating": 3,
+    "engine": "electric"
+  },
+  {
+    "id": 2,
+    "model": "Tesla",
+    "make": "X",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Electric",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/tesla/tesla-x.jpg",
+    "rating": 3,
+    "engine": "electric"
+  },
+  {
+    "id": 3,
+    "model": "Tesla",
+    "make": "Y",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Electric",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/tesla/tesla-y.jpg",
+    "rating": 3,
+    "engine": "electric"
+  },
+  {
+    "id": 1,
+    "model": "Tesla",
+    "make": "S",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Electric",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/tesla/tesla-s.jpg",
+    "rating": 3,
+    "engine": "electric"
+  }
+]
