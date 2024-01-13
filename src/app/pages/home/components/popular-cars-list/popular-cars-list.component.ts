@@ -9,22 +9,25 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { State } from '../../../../ApplicationStore/appStore';
 import { getBmwCars } from '../../../../ApplicationStore/most-popular-cars/actions/popularCars.actions';
-import { Subscription } from 'rxjs';
-import { EffectsModule } from '@ngrx/effects';
+import { Observable } from 'rxjs';
 import { PopularCarsEffect } from '../../../../ApplicationStore/most-popular-cars/effects/popular-cars-effect';
 import { PopularCarsService } from '../../services/popular-cars.service';
+import { AsyncPipe } from '@angular/common';
+import { Car } from '../../../../models/Car';
 ('angular-star-rating');
 
 @Component({
   selector: 'app-popular-cars-list',
   standalone: true,
-  imports: [CarListItemComponent, CarListItemComponent],
+  imports: [CarListItemComponent, CarListItemComponent, AsyncPipe],
   templateUrl: './popular-cars-list.component.html',
   styleUrl: './popular-cars-list.component.scss',
   providers: [PopularCarsEffect, PopularCarsService],
 })
-export class PopularCarsListComponent implements OnInit, OnDestroy {
-  storeSub!: Subscription;
+export class PopularCarsListComponent implements OnInit {
+  cars: Observable<Car[]> = this.store.select(
+    (state) => state.popularCarsState.cars
+  );
   constructor(private route: ActivatedRoute, private store: Store<State>) {}
 
   ngOnInit(): void {
@@ -50,16 +53,6 @@ export class PopularCarsListComponent implements OnInit, OnDestroy {
         default:
           console.log('default akcija bmw');
       }
-
-      this.storeSub = this.store
-        .select((state) => state.popularCarsState.cars)
-        .subscribe((cars) => {
-          console.log(cars);
-        });
     });
-  }
-
-  ngOnDestroy(): void {
-    this.storeSub.unsubscribe();
   }
 }

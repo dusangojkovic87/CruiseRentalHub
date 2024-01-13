@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "model": "Bmw",
     "make": "Series 3",
     "shiftType": "Manual",
@@ -9,9 +10,12 @@
     "hourPrice": 180,
     "gasType": "Petrol",
     "location": "Miami",
-    "mainImage": "assets/images/popular-cars/bmw/bmw.png"
+    "mainImage": "assets/images/popular-cars/bmw/bmw.png",
+    "rating": 3,
+    "engine": "basic"
   },
   {
+    "id": 2,
     "model": "Bmw",
     "make": "X7",
     "shiftType": "Manual",
@@ -21,9 +25,12 @@
     "hourPrice": 220,
     "gasType": "Petrol",
     "location": "Los Angeles",
-    "mainImage": "assets/images/popular-cars/bmw/bmw-x7.jpg"
+    "mainImage": "assets/images/popular-cars/bmw/bmw-x7.jpg",
+    "rating": 4,
+    "engine": "turbo"
   },
   {
+    "id": 3,
     "model": "Bmw",
     "make": "Z4",
     "shiftType": "Manual",
@@ -33,18 +40,23 @@
     "hourPrice": 280,
     "gasType": "Petrol",
     "location": "Los Angeles",
-    "mainImage": "assets/images/popular-cars/bmw/z4.jpg"
+    "mainImage": "assets/images/popular-cars/bmw/z4.png",
+    "rating": 5,
+    "engine": "turbo"
   },
   {
+    "id": 4,
     "model": "Bmw",
     "make": "Series 7",
     "shiftType": "Manual",
     "maxSpeed": "270km",
     "year": "2022",
-    "capacity": 2,
+    "capacity": 5,
     "hourPrice": 280,
     "gasType": "Petrol",
     "location": "Miami",
-    "mainImage": "assets/images/popular-cars/bmw/bmw-s7.jpg"
+    "mainImage": "assets/images/popular-cars/bmw/bmw-s7.jpg",
+    "rating": 3,
+    "engine": "turbo"
   }
 ]
