@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { PopularCarsActionTypes } from '../actionTypes/action.types';
 import { catchError, map, of, switchMap, tap } from 'rxjs';
 import { PopularCarsService } from '../../../pages/home/services/popular-cars.service';
-import { PopularCarItem } from '../../../models/most-popular-cars/popularCarItem';
 import {
   getBmwCars,
   getBmwCarsFail,
   getBmwCarsSuccess,
 } from '../actions/popularCars.actions';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { Car } from '../../../models/Car';
 
 @Injectable()
 export class PopularCarsEffect {
@@ -22,11 +22,9 @@ export class PopularCarsEffect {
     this.actions$.pipe(
       ofType(getBmwCars),
       switchMap(() => {
-        console.log('effect bmw');
-
         return this.popularCarsService.getBmwCars();
       }),
-      map((data: PopularCarItem[]) => {
+      map((data: Car[]) => {
         return getBmwCarsSuccess({ cars: data });
       }),
 

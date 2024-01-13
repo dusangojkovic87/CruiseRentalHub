@@ -1,12 +1,12 @@
 import { createReducer, on } from '@ngrx/store';
-import { PopularCarItem } from '../../../models/most-popular-cars/popularCarItem';
 import {
   getBmwCarsFail,
   getBmwCarsSuccess,
 } from '../actions/popularCars.actions';
+import { Car } from '../../../models/Car';
 
 export interface PopularCarsStateInterface {
-  cars: PopularCarItem[];
+  cars: Car[];
   errorMessage: string;
 }
 
