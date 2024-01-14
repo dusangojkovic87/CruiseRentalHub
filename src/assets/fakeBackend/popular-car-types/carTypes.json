@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "carType": "pickup",
+    "count": 21,
+    "icon": "assets/icons/carTypes/pickup.svg"
+  },
+  {
+    "id": 2,
+    "carType": "sport",
+    "count": 11,
+    "icon": "assets/icons/carTypes/sport.svg"
+  },
+  {
+    "id": 3,
+    "carType": "sedan",
+    "count": 16,
+    "icon": "assets/icons/carTypes/sedan.svg"
+  },
+  {
+    "id": 4,
+    "carType": "suv",
+    "count": 3,
+    "icon": "assets/icons/carTypes/suv.svg"
+  }
+]

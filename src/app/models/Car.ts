@@ -12,4 +12,5 @@ export interface Car {
   maxSpeed: number;
   rating: number;
   engine: string;
+  carType: string;
 }

@@ -4,6 +4,7 @@ import { MainImagePanelComponent } from './components/main-image-panel/main-imag
 import { BookingFormComponent } from '../../Shared/components/booking-form/booking-form.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { MostPopularCarsComponent } from './components/most-popular-cars/most-popular-cars.component';
+import { PopularCarTypesComponent } from './components/popular-car-types/popular-car-types.component';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { MostPopularCarsComponent } from './components/most-popular-cars/most-po
     BookingFormComponent,
     HowItWorksComponent,
     MostPopularCarsComponent,
+    PopularCarTypesComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
