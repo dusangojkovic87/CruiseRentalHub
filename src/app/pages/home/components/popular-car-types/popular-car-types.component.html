@@ -1,0 +1,26 @@
+<div class="car-types-container">
+  <!--car types heading wrp-->
+  <div class="car-types-heading-wrp">
+    <h6>Most Popular Car Types</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sed.</p>
+  </div>
+  <!--car types heading wrp end-->
+  <!--car types slider-->
+  <div class="slider-container">
+    <div class="slider-wrp">
+      <drag-scroll [scrollbar-hidden]="true">
+        @for(carType of carTypes | async;track carType.id ){
+        <div drag-scroll-item class="scroll-item">
+          <img src="{{ carType.icon }}" />
+          <p>{{ carType.carType }}</p>
+          <span>{{ carType.count }}</span>
+        </div>
+        }
+      </drag-scroll>
+    </div>
+  </div>
+  <!--end car types slider-->
+  <div class="view-all-cars-container">
+    <button>View all cars</button>
+  </div>
+</div>

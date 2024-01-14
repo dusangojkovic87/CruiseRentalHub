@@ -12,7 +12,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/tesla/tesla-3.jpg",
     "rating": 3,
-    "engine": "electric"
+    "engine": "electric",
+    "carType": "sedan"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/tesla/tesla-x.jpg",
     "rating": 3,
-    "engine": "electric"
+    "engine": "electric",
+    "carType": "sedan"
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/tesla/tesla-y.jpg",
     "rating": 3,
-    "engine": "electric"
+    "engine": "electric",
+    "carType": "sedan"
   },
   {
     "id": 1,
@@ -57,6 +60,7 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/tesla/tesla-s.jpg",
     "rating": 3,
-    "engine": "electric"
+    "engine": "electric",
+    "carType": "sedan"
   }
 ]

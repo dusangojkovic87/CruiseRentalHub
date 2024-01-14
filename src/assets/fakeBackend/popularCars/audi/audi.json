@@ -12,7 +12,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/audi/audi-a1.jpg",
     "rating": 3,
-    "engine": "basic"
+    "engine": "basic",
+    "carType": "sedan"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/audi/audi-q8.jpg",
     "rating": 3,
-    "engine": "basic"
+    "engine": "basic",
+    "carType": "sport"
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/audi/audi-a6.jpg",
     "rating": 3,
-    "engine": "basic"
+    "engine": "basic",
+    "carType": "sport coupe"
   },
   {
     "id": 4,
@@ -57,6 +60,7 @@
     "location": "Miami",
     "mainImage": "assets/images/popular-cars/audi/audi-r8.jpg",
     "rating": 3,
-    "engine": "basic"
+    "engine": "basic",
+    "carType": "sedan"
   }
 ]

@@ -1,0 +1,93 @@
+@import "../../../../../styles.scss";
+
+.car-types-container {
+  position: relative;
+  height: 300px;
+  top: 20px;
+
+  .car-types-heading-wrp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .slider-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slider-wrp {
+      position: relative;
+      width: 400px;
+      height: 100%;
+
+      .scroll-item {
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: 1rem;
+          color: $primary-grey;
+        }
+
+        drag-scroll {
+          height: 100px;
+          width: 300px;
+          outline: none;
+          overflow-x: hidden;
+        }
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .view-all-cars-container {
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 150px;
+      height: 30px;
+      cursor: pointer;
+      background-color: transparent;
+      border-color: $primary-black;
+      border: 2px solid $primary-black;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $primary-orange;
+        color: white;
+        border-color: $primary-orange;
+      }
+    }
+  }
+}
