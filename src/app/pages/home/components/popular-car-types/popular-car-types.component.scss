@@ -2,7 +2,7 @@
 
 .car-types-container {
   position: relative;
-  height: 300px;
+  height: auto;
   top: 20px;
 
   .car-types-heading-wrp {
@@ -70,9 +70,9 @@
 
   .view-all-cars-container {
     position: relative;
-    top: 20px;
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 
     button {
       width: 150px;

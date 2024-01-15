@@ -11,15 +11,21 @@ import {
   PopularCarTypesInterface,
   carTypesReducer,
 } from './popular-car-types/reducer/carTypesReducer';
+import {
+  FactsStateInterface,
+  factsReducer,
+} from './factsByNumbers/reducer/factsReducer';
 
 export interface State {
   headerState: HeaderStateInterface;
   popularCarsState: PopularCarsStateInterface;
   carTypesState: PopularCarTypesInterface;
+  factNumbersState: FactsStateInterface;
 }
 
 export const reducers: ActionReducerMap<State> = {
   headerState: headerReducer,
   popularCarsState: popularCarsReducer,
   carTypesState: carTypesReducer,
+  factNumbersState: factsReducer,
 };

@@ -21,8 +21,5 @@ export class PopularCarTypesComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(getCarTypesData());
-    this.store.select(selectCarTypes).subscribe((data) => {
-      console.log(data);
-    });
   }
 }
