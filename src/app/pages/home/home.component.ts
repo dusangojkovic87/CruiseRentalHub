@@ -5,6 +5,7 @@ import { BookingFormComponent } from '../../Shared/components/booking-form/booki
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { MostPopularCarsComponent } from './components/most-popular-cars/most-popular-cars.component';
 import { PopularCarTypesComponent } from './components/popular-car-types/popular-car-types.component';
+import { FactsByNumbersComponent } from './components/facts-by-numbers/facts-by-numbers.component';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { PopularCarTypesComponent } from './components/popular-car-types/popular
     HowItWorksComponent,
     MostPopularCarsComponent,
     PopularCarTypesComponent,
+    FactsByNumbersComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

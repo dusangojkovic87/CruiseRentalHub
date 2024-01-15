@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "customers",
+    "count": 732987,
+    "icon": "assets/icons/factsByNumber/heart.svg",
+    "text": "Happy Customers"
+  },
+  {
+    "id": 2,
+    "type": "cars",
+    "count": 34,
+    "icon": "assets/icons/factsByNumber/car.svg",
+    "text": "Count of cars"
+  },
+  {
+    "id": 3,
+    "type": "center",
+    "count": 65,
+    "icon": "assets/icons/factsByNumber/headset.svg",
+    "text": "Car center solutions"
+  },
+  {
+    "id": 4,
+    "type": "kilometer",
+    "count": 467478,
+    "icon": "assets/icons/factsByNumber/time.svg",
+    "text": "Total kilometers"
+  }
+]

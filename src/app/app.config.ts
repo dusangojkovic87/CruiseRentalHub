@@ -14,13 +14,14 @@ import { PopularCarsEffect } from './ApplicationStore/most-popular-cars/effects/
 import { provideHttpClient } from '@angular/common/http';
 import { provideEffects } from '@ngrx/effects';
 import { CarTypesEffect } from './ApplicationStore/popular-car-types/effects/carTypes.effect';
+import { FactsStatusEffect } from './ApplicationStore/factsByNumbers/effects/facts.effect';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideStore(reducers),
     provideHttpClient(),
-    provideEffects([PopularCarsEffect, CarTypesEffect]),
+    provideEffects([PopularCarsEffect, CarTypesEffect, FactsStatusEffect]),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     importProvidersFrom([StarRatingModule.forRoot()]),
   ],

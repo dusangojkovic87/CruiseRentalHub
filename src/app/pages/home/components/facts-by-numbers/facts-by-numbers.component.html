@@ -1,0 +1,28 @@
+<div class="facts-by-numbers-container">
+  <!--heading wrrapper-->
+  <div class="facts-heading-wrp">
+    <h6>Facts By The Number</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      laboriosam unde optio ipsa quae illo.
+    </p>
+  </div>
+  <!--end heading wrrapper-->
+  <!--statistics container-->
+  <div class="stats-container">
+    @for(fact of facts | async;track fact.id){
+    <!--fact item-->
+    <div class="stat-item">
+      <div class="stat-item-icon-wrp">
+        <img class="fact__icon" src="{{ fact.icon }}" alt="{{ fact.icon }}" />
+      </div>
+      <div class="stat-details-wrp">
+        <p class="stat__number">{{ fact.count }}</p>
+        <p>{{ fact.text }}</p>
+      </div>
+    </div>
+    <!--fact item end-->
+    }
+  </div>
+  <!--end stat container-->
+</div>
