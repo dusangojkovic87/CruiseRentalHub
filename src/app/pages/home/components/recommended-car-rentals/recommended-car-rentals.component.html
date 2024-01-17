@@ -1,0 +1,24 @@
+<div class="recommended-car-deals-container">
+  <!--heading wrrapper-->
+  <div class="heading-wrp">
+    <h6>Recommended Car Rental Deals</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex
+      aspernatur iure quas, placeat blanditiis.
+    </p>
+  </div>
+  <!--end heading wrp-->
+  <!--CAR LIST-->
+  <div class="car-list-container">
+    <div class="inner-wrp">
+      <drag-scroll [scrollbar-hidden]="true" [drag-scroll-y-disabled]="true">
+        @for(car of cars | async;track car.id ){
+
+        <app-car-list-item drag-scroll-item [car]="car"></app-car-list-item>
+
+        }
+      </drag-scroll>
+    </div>
+  </div>
+  <!--END CAR LIST-->
+</div>
