@@ -6,6 +6,13 @@ import { FactStatus } from '../../../../models/FactStatus';
 import { selectFacts } from '../../../../ApplicationStore/factsByNumbers/selectors/facts.selector';
 import { AsyncPipe } from '@angular/common';
 import { getFactsStat } from '../../../../ApplicationStore/factsByNumbers/actions/facts.actions';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-facts-by-numbers',
@@ -16,6 +23,7 @@ import { getFactsStat } from '../../../../ApplicationStore/factsByNumbers/action
 })
 export class FactsByNumbersComponent implements OnInit {
   private store = inject(Store<State>);
+  anState: string = 'closed';
 
   facts: Observable<FactStatus[]> = this.store.select(selectFacts);
 

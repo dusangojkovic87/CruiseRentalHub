@@ -1,3 +1,7 @@
+import {
+  CarDealsStateInterface,
+  carDealsReducer,
+} from './recommended-car-deals/reducer/carDealsReducer';
 import { ActionReducerMap } from '@ngrx/store';
 import {
   HeaderStateInterface,
@@ -21,6 +25,7 @@ export interface State {
   popularCarsState: PopularCarsStateInterface;
   carTypesState: PopularCarTypesInterface;
   factNumbersState: FactsStateInterface;
+  carDealsState: CarDealsStateInterface;
 }
 
 export const reducers: ActionReducerMap<State> = {
@@ -28,4 +33,5 @@ export const reducers: ActionReducerMap<State> = {
   popularCarsState: popularCarsReducer,
   carTypesState: carTypesReducer,
   factNumbersState: factsReducer,
+  carDealsState: carDealsReducer,
 };
