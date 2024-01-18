@@ -1,0 +1,124 @@
+@import "../../../../../styles.scss";
+.why-chose-us-container {
+  position: relative;
+  margin-top: 80px;
+  width: auto;
+  height: auto;
+  width: auto;
+  .heading-wrp {
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .chose-us-details-wrp {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    .chose-us-item {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1rem;
+
+      &:hover {
+        background-color: $primary-black;
+        color: white;
+        cursor: pointer;
+
+        .icon-wrp {
+          background-color: white !important;
+        }
+
+        .customer__icon::after {
+          position: absolute;
+          content: url("/assets/icons/whyChoseUs/customer-dark.svg");
+        }
+
+        .location__icon::after {
+          position: absolute;
+          content: url("/assets/icons/whyChoseUs/location-dark.svg");
+        }
+
+        .booking__icon::after {
+          position: absolute;
+          content: url("/assets/icons/whyChoseUs/booking-dark.svg");
+        }
+      }
+
+      h6 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .icon-wrp {
+        position: relative;
+        width: 80%;
+        height: 50px;
+        background-color: $primary-orange;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .location__icon {
+          display: block;
+          background: url("/assets/icons/whyChoseUs/location.svg");
+          width: 40px;
+          height: 40px;
+        }
+
+        .booking__icon {
+          display: block;
+          background: url("/assets/icons/whyChoseUs/booking.svg");
+          width: 40px;
+          height: 40px;
+        }
+
+        .customer__icon {
+          display: block;
+          background: url("/assets/icons/whyChoseUs/customer.svg");
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+.green--bg {
+  background-color: $primary-blue-green !important;
+}
+
+.black--bg {
+  background-color: $primary-black !important;
+}
