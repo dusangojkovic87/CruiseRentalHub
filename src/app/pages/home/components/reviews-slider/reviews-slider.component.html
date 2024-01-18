@@ -1,0 +1,22 @@
+<div class="reviews-slider-container">
+  <!--heading wrp-->
+  <div class="heading-wrp">
+    <h6>What people say about us?</h6>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facere
+      aliquam debitis error dolorem nostrum.
+    </p>
+  </div>
+  <!--end heading wrp-->
+  <!--reviews slider -->
+  <div class="slider-wrp">
+    <div class="inner-wrp">
+      <drag-scroll [drag-scroll-y-disabled]="true" [scrollbar-hidden]="true">
+        @for(review of reviews | async;track review.id){
+        <app-review-item [review]="review" drag-scroll-item></app-review-item>
+        }
+      </drag-scroll>
+    </div>
+  </div>
+  <!--end reviews slider-->
+</div>

@@ -15,10 +15,9 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideEffects } from '@ngrx/effects';
 import { CarTypesEffect } from './ApplicationStore/popular-car-types/effects/carTypes.effect';
 import { FactsStatusEffect } from './ApplicationStore/factsByNumbers/effects/facts.effect';
-import { BrowserModule } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { CommonModule } from '@angular/common';
 import { CarDealsEffect } from './ApplicationStore/recommended-car-deals/effects/carDealsEffect';
+import { ReviewsEffect } from './ApplicationStore/reviewsSlider/effects/effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -31,6 +30,7 @@ export const appConfig: ApplicationConfig = {
       CarTypesEffect,
       FactsStatusEffect,
       CarDealsEffect,
+      ReviewsEffect,
     ]),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     importProvidersFrom([StarRatingModule.forRoot()]),

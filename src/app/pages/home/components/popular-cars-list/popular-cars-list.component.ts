@@ -1,10 +1,5 @@
 import { selectPopularCars } from './../../../../ApplicationStore/most-popular-cars/selectors/popular-cars.selector';
-import {
-  CUSTOM_ELEMENTS_SCHEMA,
-  Component,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarListItemComponent } from '../../../../Shared/components/car-list-item/car-list-item.component';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Store } from '@ngrx/store';

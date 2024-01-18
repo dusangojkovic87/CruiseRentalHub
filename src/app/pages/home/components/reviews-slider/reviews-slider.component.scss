@@ -1,0 +1,46 @@
+@import "../../../../../styles.scss";
+.reviews-slider-container {
+  height: 500px;
+  background-color: $primary-black;
+  margin-top: 70px;
+  .heading-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .slider-wrp {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    .inner-wrp {
+      width: 560px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reviews-slider-container {
+    .slider-wrp {
+      margin-top: 90px;
+    }
+  }
+}

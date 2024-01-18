@@ -8,6 +8,7 @@ import { MostPopularCarsComponent } from './components/most-popular-cars/most-po
 import { PopularCarTypesComponent } from './components/popular-car-types/popular-car-types.component';
 import { FactsByNumbersComponent } from './components/facts-by-numbers/facts-by-numbers.component';
 import { RecommendedCarRentalsComponent } from './components/recommended-car-rentals/recommended-car-rentals.component';
+import { ReviewsSliderComponent } from './components/reviews-slider/reviews-slider.component';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ import { RecommendedCarRentalsComponent } from './components/recommended-car-ren
     FactsByNumbersComponent,
     RecommendedCarRentalsComponent,
     WhyChoseUsComponent,
+    ReviewsSliderComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

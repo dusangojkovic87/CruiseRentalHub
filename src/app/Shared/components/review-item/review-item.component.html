@@ -1,0 +1,16 @@
+<div class="review-item-container">
+  <!--img and rating-->
+  <div class="img-and-rating-wrp">
+    <img src="{{ review.image }}" alt="" />
+    <div class="name-and-rating-wrp">
+      <p>{{ review.userName }}</p>
+      <star-rating [starType]="'svg'" [rating]="review.rating"></star-rating>
+    </div>
+  </div>
+  <!--end img and rating-->
+  <!--review text-->
+  <p class="review__text">
+    {{ review.reviewText }}
+  </p>
+  <!--end review text-->
+</div>

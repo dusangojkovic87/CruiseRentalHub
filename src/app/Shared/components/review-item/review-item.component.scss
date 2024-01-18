@@ -1,0 +1,50 @@
+@import "../../../../styles.scss";
+.review-item-container {
+  background-color: white;
+  width: 500px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-blue-green;
+    color: white;
+  }
+
+  .img-and-rating-wrp {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-left: 10px;
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid $primary-blue-green;
+    }
+
+    .name-and-rating-wrp {
+      flex-direction: column;
+      height: 70px;
+      justify-content: flex-start;
+    }
+  }
+
+  .review__text {
+    text-align: justify;
+    text-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .review-item-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
