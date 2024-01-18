@@ -1,3 +1,4 @@
+import { WhyChoseUsComponent } from './components/why-chose-us/why-chose-us.component';
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../Shared/components/header/header.component';
 import { MainImagePanelComponent } from './components/main-image-panel/main-image-panel.component';
@@ -20,6 +21,7 @@ import { RecommendedCarRentalsComponent } from './components/recommended-car-ren
     PopularCarTypesComponent,
     FactsByNumbersComponent,
     RecommendedCarRentalsComponent,
+    WhyChoseUsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
