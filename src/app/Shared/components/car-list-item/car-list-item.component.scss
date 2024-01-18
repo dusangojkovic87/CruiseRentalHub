@@ -156,6 +156,8 @@
       &:hover {
         background-color: $primary-blue;
         border-color: $primary-blue;
+        transition-property: "background-color";
+        transition-duration: 500ms;
       }
 
       .date__icon {

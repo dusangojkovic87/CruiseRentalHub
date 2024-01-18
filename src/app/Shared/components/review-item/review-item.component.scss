@@ -12,6 +12,8 @@
   &:hover {
     background-color: $primary-blue-green;
     color: white;
+    transition-property: "background-color";
+    transition-duration: 500ms;
   }
 
   .img-and-rating-wrp {

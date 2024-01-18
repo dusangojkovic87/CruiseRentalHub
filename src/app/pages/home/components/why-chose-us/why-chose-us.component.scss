@@ -48,6 +48,8 @@
         background-color: $primary-black;
         color: white;
         cursor: pointer;
+        transition-property: "background-color";
+        transition-duration: 500ms;
 
         .icon-wrp {
           background-color: white !important;
