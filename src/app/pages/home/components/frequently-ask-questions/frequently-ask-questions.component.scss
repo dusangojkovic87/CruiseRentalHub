@@ -1,0 +1,28 @@
+.frequent-questions-container {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .heading-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  app-question-accordion {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,3 +1,4 @@
+import { FrequentlyAskQuestionsComponent } from './components/frequently-ask-questions/frequently-ask-questions.component';
 import { WhyChoseUsComponent } from './components/why-chose-us/why-chose-us.component';
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../Shared/components/header/header.component';
@@ -24,6 +25,7 @@ import { ReviewsSliderComponent } from './components/reviews-slider/reviews-slid
     RecommendedCarRentalsComponent,
     WhyChoseUsComponent,
     ReviewsSliderComponent,
+    FrequentlyAskQuestionsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

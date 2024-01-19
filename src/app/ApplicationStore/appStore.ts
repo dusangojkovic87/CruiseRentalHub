@@ -23,6 +23,10 @@ import {
   ReviewStateInterface,
   reviewsReducer,
 } from './reviewsSlider/reducer/reducer';
+import {
+  FrequentQuestionsStateInterface,
+  frequentQuestionsReducer,
+} from './frequentQuestions/reducer/reducer';
 
 export interface State {
   headerState: HeaderStateInterface;
@@ -31,6 +35,7 @@ export interface State {
   factNumbersState: FactsStateInterface;
   carDealsState: CarDealsStateInterface;
   reviewState: ReviewStateInterface;
+  frequentQuestionsState: FrequentQuestionsStateInterface;
 }
 
 export const reducers: ActionReducerMap<State> = {
@@ -40,4 +45,5 @@ export const reducers: ActionReducerMap<State> = {
   factNumbersState: factsReducer,
   carDealsState: carDealsReducer,
   reviewState: reviewsReducer,
+  frequentQuestionsState: frequentQuestionsReducer,
 };

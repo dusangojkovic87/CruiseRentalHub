@@ -1,0 +1,15 @@
+<div class="frequent-questions-container">
+  <!--heading wrrapper-->
+  <div class="heading-wrp">
+    <h6>Frequent Ask Questions</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus.
+    </p>
+  </div>
+  <!--end heading wrp-->
+  <!--questions list -->
+  @for(question of questions$ | async ;track question.id ){
+  <app-question-accordion [question]="question"></app-question-accordion>
+  }
+  <!--end question list-->
+</div>

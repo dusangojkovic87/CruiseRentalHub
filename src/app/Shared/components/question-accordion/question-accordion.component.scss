@@ -1,0 +1,75 @@
+@import "../../../../styles.scss";
+.accordion-container {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid $primary-light-grey;
+  border-radius: 5px;
+  z-index: 1;
+  margin: 20px;
+  align-items: center;
+  .question-accord-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+
+    .icon-wrp {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background-color: $primary-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+
+      .arrow__icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("/assets/icons/questionAccordion/arrow.svg");
+      }
+    }
+  }
+
+  .answer {
+    position: relative;
+    color: $primary-grey;
+    text-align: center;
+    padding-left: 10px;
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.visible--true {
+  opacity: 1;
+  height: auto;
+  transition: all 500ms ease-in-out;
+  padding: 10px;
+  text-align: justify;
+  text-wrap: wrap;
+  color: $primary-grey;
+}
+
+.arrow__up {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("/assets/icons/questionAccordion/arrow.svg");
+  transform: rotate(180deg);
+}

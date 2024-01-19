@@ -1,0 +1,30 @@
+@if(question){
+
+<div class="accordion-container">
+  <!--accordion visible question-->
+  <div class="question-accord-wrp">
+    <p>{{ question.question }}</p>
+    <div class="icon-wrp" (click)="toggleAnswer()">
+      <span
+        [ngClass]="{
+          ' arrow__up': isAnswerVisible === true,
+          ' arrow__icon': isAnswerVisible === false
+        }"
+      ></span>
+    </div>
+  </div>
+  <!--end visible question-->
+  <!--accordion expanding answer-->
+
+  <p
+    [ngClass]="{
+      'answer visible--true': isAnswerVisible === true,
+      answer: isAnswerVisible === false
+    }"
+  >
+    {{ question.answer }}
+  </p>
+
+  <!--end expanding answer-->
+</div>
+}

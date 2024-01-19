@@ -18,6 +18,7 @@ import { FactsStatusEffect } from './ApplicationStore/factsByNumbers/effects/fac
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CarDealsEffect } from './ApplicationStore/recommended-car-deals/effects/carDealsEffect';
 import { ReviewsEffect } from './ApplicationStore/reviewsSlider/effects/effects';
+import { FrequentQuestionsEffect } from './ApplicationStore/frequentQuestions/effects/effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -31,6 +32,7 @@ export const appConfig: ApplicationConfig = {
       FactsStatusEffect,
       CarDealsEffect,
       ReviewsEffect,
+      FrequentQuestionsEffect,
     ]),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     importProvidersFrom([StarRatingModule.forRoot()]),
