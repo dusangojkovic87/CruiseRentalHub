@@ -19,6 +19,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { CarDealsEffect } from './ApplicationStore/recommended-car-deals/effects/carDealsEffect';
 import { ReviewsEffect } from './ApplicationStore/reviewsSlider/effects/effects';
 import { FrequentQuestionsEffect } from './ApplicationStore/frequentQuestions/effects/effects';
+import { PricingPlanEffect } from './ApplicationStore/pricing-package/effects/effect';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -33,6 +34,7 @@ export const appConfig: ApplicationConfig = {
       CarDealsEffect,
       ReviewsEffect,
       FrequentQuestionsEffect,
+      PricingPlanEffect,
     ]),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     importProvidersFrom([StarRatingModule.forRoot()]),

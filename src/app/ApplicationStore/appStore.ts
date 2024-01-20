@@ -27,6 +27,10 @@ import {
   FrequentQuestionsStateInterface,
   frequentQuestionsReducer,
 } from './frequentQuestions/reducer/reducer';
+import {
+  IPricingPlanState,
+  pricingPlanReducer,
+} from './pricing-package/reducer/reducer';
 
 export interface State {
   headerState: HeaderStateInterface;
@@ -36,6 +40,7 @@ export interface State {
   carDealsState: CarDealsStateInterface;
   reviewState: ReviewStateInterface;
   frequentQuestionsState: FrequentQuestionsStateInterface;
+  pricingPlanState: IPricingPlanState;
 }
 
 export const reducers: ActionReducerMap<State> = {
@@ -46,4 +51,5 @@ export const reducers: ActionReducerMap<State> = {
   carDealsState: carDealsReducer,
   reviewState: reviewsReducer,
   frequentQuestionsState: frequentQuestionsReducer,
+  pricingPlanState: pricingPlanReducer,
 };
