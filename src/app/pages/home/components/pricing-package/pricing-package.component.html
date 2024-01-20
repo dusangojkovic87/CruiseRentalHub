@@ -4,6 +4,13 @@
     <h6>Transparent pricing for you</h6>
     <p>choose a package that suit you</p>
   </div>
+  <!--monthly or yearly sub button -->
+  <div class="switch-wrp">
+    <app-switch-button
+      (buttonStateEvent)="changePricingPlan($event)"
+    ></app-switch-button>
+  </div>
+  <!--end od btn-->
   <!--end heading wrp-->
   <div class="pricing-list-wrp">
     <!--first item with image-->
