@@ -10,6 +10,7 @@ import { PopularCarTypesComponent } from './components/popular-car-types/popular
 import { FactsByNumbersComponent } from './components/facts-by-numbers/facts-by-numbers.component';
 import { RecommendedCarRentalsComponent } from './components/recommended-car-rentals/recommended-car-rentals.component';
 import { ReviewsSliderComponent } from './components/reviews-slider/reviews-slider.component';
+import { PricingPackageComponent } from './components/pricing-package/pricing-package.component';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +27,7 @@ import { ReviewsSliderComponent } from './components/reviews-slider/reviews-slid
     WhyChoseUsComponent,
     ReviewsSliderComponent,
     FrequentlyAskQuestionsComponent,
+    PricingPackageComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

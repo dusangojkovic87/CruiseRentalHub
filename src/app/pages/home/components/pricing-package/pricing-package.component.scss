@@ -1,0 +1,147 @@
+@import "../../../../../styles.scss";
+.pricing-package-container {
+  .heading-wrp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      color: $primary-grey;
+    }
+  }
+
+  .pricing-list-wrp {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+
+    .pricing-item {
+      position: relative;
+      width: 250px;
+      height: 400px;
+      background-color: transparent;
+      border-radius: 10px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $primary-light-grey;
+      cursor: pointer;
+      padding: 10px;
+      transition: background-color 500ms ease-in-out;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        top: 120px;
+      }
+
+      h6 {
+        font-size: 1.4rem;
+        color: white;
+        text-transform: capitalize;
+        font-weight: bolder;
+        text-shadow: 2px 2px 2px $primary-black;
+      }
+
+      p:nth-child(2) {
+        color: white;
+        font-size: 1rem;
+      }
+
+      .price-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+
+      &:hover {
+        background-color: $primary-blue-green;
+        color: white;
+        border: 1px solid $primary-orange;
+
+        .item-heading-wrp {
+          background-color: white;
+          color: $primary-black;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+
+        li {
+          list-style: none;
+          text-align: left;
+          padding: 10px;
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          height: 20px;
+          font-size: 0.8rem;
+
+          .checkMark__icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("/assets/icons/pricing-package/checkMark.svg");
+            margin-right: 10px;
+          }
+
+          .xMark__icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("/assets/icons/pricing-package/xMark.svg");
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .item-heading-wrp {
+        margin-top: 10px;
+        width: 80%;
+        height: 50px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.orange--bg {
+  background-color: $primary-orange !important;
+}
+
+.blueGreen--bg {
+  background-color: $primary-blue-green !important;
+  &:hover {
+    background-color: $primary-black !important;
+    transition: background-color 500ms ease-in-out;
+  }
+}
