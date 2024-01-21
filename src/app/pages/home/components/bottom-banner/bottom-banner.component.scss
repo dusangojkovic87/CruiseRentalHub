@@ -1,0 +1,143 @@
+@import "../../../../../styles.scss";
+.bottom-banner-container {
+  position: relative;
+  height: 400px;
+  width: 80%;
+  background-color: $primary-black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  overflow: hidden;
+  .details-wrp {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .google-play-app-store-wrp {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .google-play-wrp {
+        width: 200px;
+        height: 70px;
+        background-color: orange;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+
+        div {
+          p {
+            margin: 2px;
+            padding: 2px;
+            font-size: 10px;
+            font-weight: bold;
+          }
+        }
+
+        .google__icon {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url("/assets/icons/bottom-banner/googlePlay.svg");
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+      }
+
+      .app-store-wrp {
+        width: 200px;
+        height: 70px;
+        background-color: rgb(66, 65, 65);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+
+        div {
+          p {
+            margin: 2px;
+            padding: 2px;
+            font-size: 10px;
+            font-weight: bold;
+          }
+        }
+
+        .apple__icon {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url("/assets/icons/bottom-banner/appStore.svg");
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    h6 {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 5px;
+      padding: 1rem;
+    }
+
+    p {
+      color: white;
+      padding: 1rem;
+    }
+  }
+
+  .img-wrp {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: 20px solid $primary-grey;
+    background-color: $primary-light-grey;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      top: -50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .bottom-banner-container {
+    height: 400px;
+    .details-wrp {
+      width: 100%;
+      justify-content: center;
+
+      h6 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .img-wrp {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .bottom-banner-container {
+    align-items: flex-start;
+    height: 500px;
+  }
+}

@@ -23,7 +23,7 @@
     <div class="pricing-item">
       <div class="item-heading-wrp">Essential</div>
       <div class="price-wrp">
-        <p>{{ pricingPlan.essential }}</p>
+        <p>{{ pricingPlan.essential | currency : "EUR" }}</p>
         <span #planType>per month</span>
       </div>
       <ul>
@@ -42,7 +42,7 @@
     <div class="pricing-item">
       <div class="item-heading-wrp orange--bg">Recommended</div>
       <div class="price-wrp">
-        <p>{{ pricingPlan.recommended }}</p>
+        <p>{{ pricingPlan.recommended | currency : "EUR" }}</p>
         <span #planType>per month</span>
       </div>
       <ul>
@@ -61,7 +61,7 @@
     <div class="pricing-item">
       <div class="item-heading-wrp">Pro</div>
       <div class="price-wrp">
-        <p>{{ pricingPlan.pro }}</p>
+        <p>{{ pricingPlan.pro | currency : "EUR" }}</p>
         <span #planType>per month</span>
       </div>
       <ul>

@@ -17,11 +17,12 @@ import {
 import { Subscription } from 'rxjs';
 import { PricingPlan } from '../../../../models/PricingPlan';
 import { selectPricingPlan } from '../../../../ApplicationStore/pricing-package/selectors/selector';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-pricing-package',
   standalone: true,
-  imports: [SwitchButtonComponent],
+  imports: [SwitchButtonComponent, CurrencyPipe],
   templateUrl: './pricing-package.component.html',
   styleUrl: './pricing-package.component.scss',
 })

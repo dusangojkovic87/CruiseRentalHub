@@ -11,6 +11,7 @@ import { FactsByNumbersComponent } from './components/facts-by-numbers/facts-by-
 import { RecommendedCarRentalsComponent } from './components/recommended-car-rentals/recommended-car-rentals.component';
 import { ReviewsSliderComponent } from './components/reviews-slider/reviews-slider.component';
 import { PricingPackageComponent } from './components/pricing-package/pricing-package.component';
+import { BottomBannerComponent } from './components/bottom-banner/bottom-banner.component';
 
 @Component({
   selector: 'app-home',
@@ -28,6 +29,7 @@ import { PricingPackageComponent } from './components/pricing-package/pricing-pa
     ReviewsSliderComponent,
     FrequentlyAskQuestionsComponent,
     PricingPackageComponent,
+    BottomBannerComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
