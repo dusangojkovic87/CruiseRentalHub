@@ -1,0 +1,234 @@
+@import "../../../../styles.scss";
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: $primary-black;
+  margin-top: 70px;
+  padding-bottom: 1rem;
+  height: auto;
+  flex-wrap: wrap;
+
+  .border-box {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    h6 {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .border-left {
+      position: absolute;
+      width: 30%;
+      height: 4px;
+      background-color: $primary-orange;
+    }
+  }
+
+  .footer-links-wrp {
+    width: 200px;
+    height: 300px;
+
+    h6 {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    form {
+      .email-input-wrp {
+        position: relative;
+        display: flex;
+        background-color: white;
+        height: 30px;
+        align-items: center;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 10px;
+        .plane__icon {
+          position: absolute;
+          display: block;
+          width: 25px;
+          height: 25px;
+          background: url("/assets/icons/footer/plane.svg");
+          background-color: transparent;
+          right: 0;
+          margin-right: 5px;
+          cursor: pointer;
+        }
+
+        .emailGrey__icon {
+          display: block;
+          width: 25px;
+          height: 25px;
+          background: url("/assets/icons/footer/emailGrey.svg");
+          margin-right: 5px;
+          background-color: transparent;
+        }
+
+        input {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 60px;
+      li {
+        list-style: none;
+        color: $primary-grey;
+        margin: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: auto;
+
+        .icon-wrp {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $primary-orange;
+          border-radius: 5px;
+          padding: 5px;
+          margin-right: 5px;
+
+          .phone__icon {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background: url("/assets/icons/footer/phone.svg");
+            display: inline-block;
+          }
+
+          .mail__icon {
+            position: relative;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background: url("/assets/icons/footer/email.svg");
+          }
+        }
+
+        &:hover {
+          color: $primary-orange;
+        }
+      }
+    }
+
+    .social-links-wrp {
+      display: flex;
+      align-items: center;
+      height: auto;
+      justify-content: space-around;
+
+      .social-icon-wrp {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        .facebook__icon {
+          width: 25px;
+          height: 25px;
+          display: block;
+          background: url("/assets/icons/footer/facebook.svg");
+        }
+
+        .instagram__icon {
+          width: 25px;
+          height: 25px;
+          display: block;
+          background: url("/assets/icons/footer/instagram.svg");
+        }
+
+        .linkedin__icon {
+          width: 25px;
+          height: 25px;
+          display: block;
+          background: url("/assets/icons/footer/linkedin.svg");
+        }
+      }
+    }
+
+    .connect__with__us {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.payment-method-container {
+  height: 50px;
+  background-color: $primary-black;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $primary-light-grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  p {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .payments-wrp {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+
+    .master__icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("/assets/icons/footer/master.svg");
+    }
+
+    .visa__icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("/assets/icons/footer/visa.svg");
+    }
+
+    .gPay__icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("/assets/icons/footer/gpay.svg");
+    }
+
+    .payPal__icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("/assets/icons/footer/payPal.svg");
+    }
+  }
+}
+
+.facebook--bg {
+  background-color: $facebook;
+}
+
+.linkedin--bg {
+  background-color: $linkedin;
+}
+
+.instagram--bg {
+  background-color: $instagram-purple-red;
+}
