@@ -1,0 +1,60 @@
+@import "../../../../../styles.scss";
+.signIn-container {
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+
+    a {
+      position: relative;
+      margin-top: 50px;
+      color: red;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: $primary-black;
+    }
+
+    .input-wrp {
+      height: 40px;
+      width: 100%;
+      margin: 30px;
+
+      span {
+        color: red;
+      }
+
+      label {
+        height: 30px;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-radius: 5px;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 40px;
+      background-color: $primary-black;
+      color: white;
+      cursor: pointer;
+      margin-top: 40px;
+      border-radius: 5px;
+    }
+  }
+}

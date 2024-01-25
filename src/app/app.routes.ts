@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AccountComponent } from './pages/account/account.component';
 import { PopularCarsListComponent } from './pages/home/components/popular-cars-list/popular-cars-list.component';
-import { PopularCarsEffect } from './ApplicationStore/most-popular-cars/effects/popular-cars-effect';
-import { provideEffects } from '@ngrx/effects';
+import { SignUpComponent } from './pages/account/components/sign-up/sign-up.component';
+import { SignInComponent } from './pages/account/components/sign-in/sign-in.component';
 
 export const routes: Routes = [
   {
@@ -20,4 +20,6 @@ export const routes: Routes = [
   },
   { component: HomeComponent, path: 'home' },
   { component: AccountComponent, path: 'account' },
+  { component: SignUpComponent, path: 'account/signUp' },
+  { component: SignInComponent, path: 'account/signIn' },
 ];
