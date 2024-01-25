@@ -4,6 +4,8 @@ import { AccountComponent } from './pages/account/account.component';
 import { PopularCarsListComponent } from './pages/home/components/popular-cars-list/popular-cars-list.component';
 import { SignUpComponent } from './pages/account/components/sign-up/sign-up.component';
 import { SignInComponent } from './pages/account/components/sign-in/sign-in.component';
+import { LocationsComponent } from './pages/locations/locations.component';
+import { LocationDetailsComponent } from './pages/locations/components/location-details/location-details.component';
 
 export const routes: Routes = [
   {
@@ -22,4 +24,6 @@ export const routes: Routes = [
   { component: AccountComponent, path: 'account' },
   { component: SignUpComponent, path: 'account/signUp' },
   { component: SignInComponent, path: 'account/signIn' },
+  { component: LocationsComponent, path: 'locations' },
+  { component: LocationDetailsComponent, path: 'location/details/:id' },
 ];

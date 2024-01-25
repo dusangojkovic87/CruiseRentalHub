@@ -31,6 +31,10 @@ import {
   IPricingPlanState,
   pricingPlanReducer,
 } from './pricing-package/reducer/reducer';
+import {
+  ILocationIndexState,
+  locationIndexReducer,
+} from './locationIndex/reducer/reducer';
 
 export interface State {
   headerState: HeaderStateInterface;
@@ -41,6 +45,7 @@ export interface State {
   reviewState: ReviewStateInterface;
   frequentQuestionsState: FrequentQuestionsStateInterface;
   pricingPlanState: IPricingPlanState;
+  locationIndexState: ILocationIndexState;
 }
 
 export const reducers: ActionReducerMap<State> = {
@@ -52,4 +57,5 @@ export const reducers: ActionReducerMap<State> = {
   reviewState: reviewsReducer,
   frequentQuestionsState: frequentQuestionsReducer,
   pricingPlanState: pricingPlanReducer,
+  locationIndexState: locationIndexReducer,
 };

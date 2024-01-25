@@ -1,0 +1,13 @@
+<div class="location-index-container">
+  <h2>Location Index</h2>
+  <hr />
+  <ul>
+    @for(location of locations | paginate: { itemsPerPage: 30, currentPage: p }
+    ;track location.id){
+    <li [routerLink]="['/location/details', location.id]">
+      {{ location.locationName }}
+    </li>
+    }
+  </ul>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
