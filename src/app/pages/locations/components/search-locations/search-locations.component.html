@@ -1,6 +1,24 @@
 <div class="search-location-container">
   <form>
-    <input type="text" name="search" placeholder="Enter location address" />
+    <input
+      [(ngModel)]="searchTerm"
+      (input)="filterLocations()"
+      type="text"
+      name="search"
+      placeholder="Enter location address"
+    />
+    @if(filteredLocations.length > 0){
+    <div class="filtered-locations-wrp">
+      <p>Suggestions:</p>
+      <ul>
+        @for(location of filteredLocations;track location.id){
+        <li>{{ location.locationName }}</li>
+        }
+      </ul>
+    </div>
+
+    }
+
     <button>Find location</button>
   </form>
 </div>

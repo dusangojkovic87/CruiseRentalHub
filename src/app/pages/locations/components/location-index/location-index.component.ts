@@ -23,8 +23,6 @@ export class LocationIndexComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(getAllLocations());
     this.store.select(selectLocations).subscribe((data) => {
-      console.log(data);
-
       this.locations = data;
     });
   }

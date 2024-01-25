@@ -438,5 +438,20 @@
         "hoursOfOperation": "Sun - Sat 7:00 AM - 12:00 AM"
       }
     ]
+  },
+  {
+    "id": 21,
+    "locationName": "Belgrade",
+    "locationImage": "/assets/images/locations/belgrade.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet ullamcorper augue mollis pretium. Morbi eu lacus non augue ornare dictum. Etiam sit amet erat tempus, venenatis massa eget, auctor mi. Ut vel commodo nisi. Nunc malesuada enim quam, in condimentum turpis dictum vitae. Donec ac sapien vehicula, tristique quam ac, laoreet justo. Aliquam arcu velit, sagittis at ultricies ac, lacinia vitae nibh. Sed ornare sodales sollicitudin. Vestibulum rhoncus erat massa. Quisque ornare ullamcorper ligula vitae eleifend. Nunc efficitur egestas quam, non venenatis justo lacinia non. Sed mattis faucibus felis, eget mollis augue ornare id. Aliquam tristique vulputate pellentesque.",
+    "destinations": [
+      {
+        "destinationName": "Anchorage Airport",
+        "address": "Nikola Tesla Airport",
+        "phone": 575856889,
+        "locationType": "corporate",
+        "hoursOfOperation": "Sun - Sat 7:00 AM - 12:00 AM"
+      }
+    ]
   }
 ]

@@ -10,6 +10,38 @@
     display: flex;
     flex-direction: column;
 
+    .filtered-locations-wrp {
+      position: absolute;
+      top: 200px;
+      background-color: white;
+      width: 70%;
+      height: 120px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        padding-left: 1rem;
+        color: $saphire-blue;
+        font-weight: bold;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+        li {
+          list-style: none;
+          padding: 10px;
+          border-top: 1px solid $primary-light-grey;
+          border-bottom: 1px solid $primary-light-grey;
+          width: 80%;
+          padding: 1rem;
+        }
+      }
+    }
+
     input {
       height: 40px;
       outline: none;
