@@ -1,0 +1,47 @@
+@import "../../../../../styles.scss";
+
+.signUp-container {
+  display: flex;
+  justify-content: center;
+  form {
+    margin-top: 50px;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      width: 100%;
+      height: 40px;
+    }
+
+    span {
+      color: red;
+    }
+
+    .input-wrp {
+      width: 100%;
+      height: 40px;
+      margin: 30px;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      outline: none;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 100%;
+      height: 40px;
+      background-color: $primary-black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
