@@ -3,10 +3,10 @@ import {
   getAllLocationsFail,
   getAllLocationsSuccess,
 } from '../actions/actions';
-import { Location } from '../../../models/Location';
+import { ILocation } from '../../../models/Location';
 
 export interface ILocationIndexState {
-  locations: Location[];
+  locations: ILocation[];
   errorMessage: string;
 }
 

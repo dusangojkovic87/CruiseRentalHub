@@ -23,4 +23,18 @@
       font-weight: bold;
     }
   }
+
+  .text-wrp {
+    h6 {
+      font-size: 1.2rem;
+      color: $saphire-blue;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $primary-grey;
+      text-align: justify;
+    }
+  }
 }

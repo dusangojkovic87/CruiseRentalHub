@@ -7,7 +7,7 @@ import {
 } from '../actions/actions';
 import { catchError, map, of, switchMap } from 'rxjs';
 import { LocationService } from '../../../pages/locations/services/location.service';
-import { Location } from '../../../models/Location';
+import { ILocation } from '../../../models/Location';
 
 @Injectable()
 export class LocationIndexEffect {
@@ -20,7 +20,7 @@ export class LocationIndexEffect {
       switchMap(() => {
         return this.locationService.getAllLocations();
       }),
-      map((locations: Location[]) => {
+      map((locations: ILocation[]) => {
         return getAllLocationsSuccess({ locations: locations });
       }),
       catchError((err) => {

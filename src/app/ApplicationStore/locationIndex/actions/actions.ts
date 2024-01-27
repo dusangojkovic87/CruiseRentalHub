@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 import { locationIndexActionTypes } from '../actionTypes/actionTypes';
-import { Location } from '../../../models/Location';
+import { ILocation } from '../../../models/Location';
 import { ErrorResponse } from '../../../models/Error/ErrorResponse';
 
 export const getAllLocations = createAction(
@@ -9,7 +9,7 @@ export const getAllLocations = createAction(
 
 export const getAllLocationsSuccess = createAction(
   locationIndexActionTypes.GET_LOCATIONS_SUCCESS,
-  props<{ locations: Location[] }>()
+  props<{ locations: ILocation[] }>()
 );
 
 export const getAllLocationsFail = createAction(

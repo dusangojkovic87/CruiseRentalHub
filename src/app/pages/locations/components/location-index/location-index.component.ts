@@ -6,7 +6,7 @@ import { AsyncPipe } from '@angular/common';
 import { selectLocations } from '../../../../ApplicationStore/locationIndex/selectors/selectors';
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { Location } from '../../../../models/Location';
+import { ILocation } from '../../../../models/Location';
 
 @Component({
   selector: 'app-location-index',
@@ -17,7 +17,7 @@ import { Location } from '../../../../models/Location';
 })
 export class LocationIndexComponent implements OnInit {
   private store = inject(Store<State>);
-  locations: Location[] = [];
+  locations: ILocation[] = [];
   p: number = 1;
 
   ngOnInit(): void {

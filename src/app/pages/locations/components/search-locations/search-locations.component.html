@@ -12,7 +12,9 @@
       <p>Suggestions:</p>
       <ul>
         @for(location of filteredLocations;track location.id){
-        <li>{{ location.locationName }}</li>
+        <li [routerLink]="['/location/details', location.id]">
+          {{ location.locationName }}
+        </li>
         }
       </ul>
     </div>

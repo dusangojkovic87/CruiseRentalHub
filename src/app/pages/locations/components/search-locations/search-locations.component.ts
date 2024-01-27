@@ -4,18 +4,19 @@ import { Store } from '@ngrx/store';
 import { State } from '../../../../ApplicationStore/appStore';
 import { selectLocations } from '../../../../ApplicationStore/locationIndex/selectors/selectors';
 import { Subscription, filter, map } from 'rxjs';
-import { Location } from '../../../../models/Location';
+import { ILocation } from '../../../../models/Location';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-search-locations',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './search-locations.component.html',
   styleUrl: './search-locations.component.scss',
 })
 export class SearchLocationsComponent implements OnDestroy {
   searchTerm: string = '';
-  filteredLocations: Location[] = [];
+  filteredLocations: ILocation[] = [];
   locationSub!: Subscription;
   private store = inject(Store<State>);
 
@@ -28,8 +29,8 @@ export class SearchLocationsComponent implements OnDestroy {
     this.locationSub = this.store
       .select(selectLocations)
       .pipe(
-        map((locations: Location[]) =>
-          locations.filter((location: Location) =>
+        map((locations: ILocation[]) =>
+          locations.filter((location: ILocation) =>
             location.locationName
               .toLowerCase()
               .startsWith(this.searchTerm.toLowerCase())

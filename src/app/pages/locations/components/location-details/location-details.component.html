@@ -1,1 +1,29 @@
-<p>location-details works!</p>
+@if(filteredLocation){
+<div class="location-details-wrp">
+  <h1>Car rental in {{ filteredLocation.locationName }}</h1>
+  <p>{{ filteredLocation.description }}</p>
+  <div class="img-and-destinations-wrp">
+    <div class="img-wrp">
+      <img
+        src="{{ filteredLocation.locationImage }}"
+        alt="{{ filteredLocation.locationImage }}"
+      />
+    </div>
+    <div class="destinations-wrp">
+      <h6>
+        Where can you get car rental in {{ filteredLocation.locationName }}?
+      </h6>
+      <ul>
+        @for(dest of filteredLocation.destinations | paginate: { itemsPerPage:
+        5, currentPage: p };track filteredLocation.id ){
+        <li [routerLink]="['/location/destinations', dest.id]">
+          {{ dest.destinationName }}
+        </li>
+        }
+      </ul>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+</div>
+
+}

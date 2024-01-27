@@ -1,6 +1,6 @@
 import { Destination } from './Destination';
 
-export interface Location {
+export interface ILocation {
   id: number;
   locationName: string;
   locationImage: string;

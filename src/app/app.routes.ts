@@ -6,6 +6,8 @@ import { SignUpComponent } from './pages/account/components/sign-up/sign-up.comp
 import { SignInComponent } from './pages/account/components/sign-in/sign-in.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { LocationDetailsComponent } from './pages/locations/components/location-details/location-details.component';
+import { DestinationDetailsComponent } from './pages/locations/components/destination-details/destination-details.component';
+import { VehiclesComponent } from './pages/vehicles/vehicles.component';
 
 export const routes: Routes = [
   {
@@ -22,8 +24,10 @@ export const routes: Routes = [
   },
   { component: HomeComponent, path: 'home' },
   { component: AccountComponent, path: 'account' },
+  { component: VehiclesComponent, path: 'vehicles' },
   { component: SignUpComponent, path: 'account/signUp' },
   { component: SignInComponent, path: 'account/signIn' },
   { component: LocationsComponent, path: 'locations' },
   { component: LocationDetailsComponent, path: 'location/details/:id' },
+  { component: DestinationDetailsComponent, path: 'location/destinations/:id' },
 ];

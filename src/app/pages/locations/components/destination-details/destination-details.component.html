@@ -1,0 +1,44 @@
+@if(destination){
+
+<div class="destination-details-container">
+  <div class="inner-wrp">
+    <div class="details-wrp">
+      <h6>{{ destination.destinationName }}</h6>
+      <ul>
+        <li>
+          <div class="icon-wrp">
+            <span class="address__icon"></span>
+            <p>Address:</p>
+          </div>
+
+          <p>{{ destination.address }}</p>
+        </li>
+        <li>
+          <div class="icon-wrp">
+            <span class="phone__icon"></span>
+            <p>Phone:</p>
+          </div>
+          <p>{{ destination.phone }}</p>
+        </li>
+        <li>
+          <div class="icon-wrp">
+            <span class="corp__icon"></span>
+            <p>Corporate Type:</p>
+          </div>
+          <p>{{ destination.locationType }}</p>
+        </li>
+        <li>
+          <div class="icon-wrp">
+            <span class="clock__icon"></span>
+            <p>Hours of operation:</p>
+          </div>
+          <p>{{ destination.hoursOfOperation }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="get-directions-wrp">
+      <button>Get directions</button>
+    </div>
+  </div>
+</div>
+}
