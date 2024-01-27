@@ -35,6 +35,7 @@ import {
   ILocationIndexState,
   locationIndexReducer,
 } from './locationIndex/reducer/reducer';
+import { IVehiclesState, vehicleReducer } from './vehicles/reducer/reducer';
 
 export interface State {
   headerState: HeaderStateInterface;
@@ -46,6 +47,7 @@ export interface State {
   frequentQuestionsState: FrequentQuestionsStateInterface;
   pricingPlanState: IPricingPlanState;
   locationIndexState: ILocationIndexState;
+  vehiclesState: IVehiclesState;
 }
 
 export const reducers: ActionReducerMap<State> = {
@@ -58,4 +60,5 @@ export const reducers: ActionReducerMap<State> = {
   frequentQuestionsState: frequentQuestionsReducer,
   pricingPlanState: pricingPlanReducer,
   locationIndexState: locationIndexReducer,
+  vehiclesState: vehicleReducer,
 };

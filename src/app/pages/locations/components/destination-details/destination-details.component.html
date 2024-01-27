@@ -1,9 +1,10 @@
 @if(destination){
-
+<!--destination details-->
 <div class="destination-details-container">
   <div class="inner-wrp">
     <div class="details-wrp">
       <h6>{{ destination.destinationName }}</h6>
+
       <ul>
         <li>
           <div class="icon-wrp">
@@ -41,4 +42,9 @@
     </div>
   </div>
 </div>
+<!--end destination details-->
+<!--cars from this destinaion-->
+<app-location-car-list
+  [destinationName]="destination.destinationName"
+></app-location-car-list>
 }

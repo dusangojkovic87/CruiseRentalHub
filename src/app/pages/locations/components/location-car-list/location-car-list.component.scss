@@ -1,0 +1,16 @@
+@import "../../../../../styles.scss";
+
+.location-cars-list-container {
+  h6 {
+    padding-left: 1rem;
+    color: $saphire-blue;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+
+  hr {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-color: $saphire-blue;
+  }
+}

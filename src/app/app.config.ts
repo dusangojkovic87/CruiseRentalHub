@@ -21,6 +21,7 @@ import { ReviewsEffect } from './ApplicationStore/reviewsSlider/effects/effects'
 import { FrequentQuestionsEffect } from './ApplicationStore/frequentQuestions/effects/effects';
 import { PricingPlanEffect } from './ApplicationStore/pricing-package/effects/effect';
 import { LocationIndexEffect } from './ApplicationStore/locationIndex/effects/locationIndex.effect.';
+import { CarsEffect } from './ApplicationStore/vehicles/effects/effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -37,6 +38,7 @@ export const appConfig: ApplicationConfig = {
       FrequentQuestionsEffect,
       PricingPlanEffect,
       LocationIndexEffect,
+      CarsEffect,
     ]),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     importProvidersFrom([StarRatingModule.forRoot()]),

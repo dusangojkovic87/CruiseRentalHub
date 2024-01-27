@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "model": "Audi",
+    "make": "A1",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/audi/audi-a1.jpg",
+    "rating": 3,
+    "engine": "basic",
+    "carType": "sedan",
+    "destination": "Nikola Tesla Airport"
+  },
+  {
+    "id": 2,
+    "model": "Bmw",
+    "make": "Series 7",
+    "shiftType": "Manual",
+    "maxSpeed": "270km",
+    "year": "2022",
+    "capacity": 5,
+    "hourPrice": 280,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/bmw/bmw-s7.jpg",
+    "rating": 3,
+    "engine": "turbo",
+    "carType": "sedan",
+    "destination": "Nikola Tesla Airport"
+  },
+  {
+    "id": 3,
+    "model": "Volkswagen",
+    "make": "T Cross",
+    "shiftType": "Manual",
+    "maxSpeed": "220km",
+    "year": "2003",
+    "capacity": 5,
+    "hourPrice": 180,
+    "gasType": "Petrol",
+    "location": "Miami",
+    "mainImage": "assets/images/popular-cars/volkswagen/t cross.jpg",
+    "rating": 4,
+    "engine": "basic",
+    "carType": "sedan",
+    "destination": "Banjička"
+  }
+]

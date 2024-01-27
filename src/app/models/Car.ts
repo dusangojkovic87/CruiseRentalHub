@@ -13,4 +13,5 @@ export interface Car {
   rating: number;
   engine: string;
   carType: string;
+  destination: string;
 }
