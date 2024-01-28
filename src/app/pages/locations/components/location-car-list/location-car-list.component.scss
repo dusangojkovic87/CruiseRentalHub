@@ -1,6 +1,16 @@
 @import "../../../../../styles.scss";
 
 .location-cars-list-container {
+  .inner-wrp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .car-item-wrp {
+      margin: 20px;
+    }
+  }
+
   h6 {
     padding-left: 1rem;
     color: $saphire-blue;

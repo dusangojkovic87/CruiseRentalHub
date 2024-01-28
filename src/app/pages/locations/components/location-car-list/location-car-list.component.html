@@ -3,4 +3,12 @@
   <hr />
 
   <!--HERE ADD CAR LIST ITEMS-->
+  <div class="inner-wrp">
+    @for(car of carsByDest;track car.id){
+    <div class="car-item-wrp">
+      <app-car-list-item [car]="car"></app-car-list-item>
+    </div>
+
+    }
+  </div>
 </div>

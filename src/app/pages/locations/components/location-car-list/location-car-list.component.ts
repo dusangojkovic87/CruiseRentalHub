@@ -5,11 +5,12 @@ import { filterVehiclesByDest } from '../../../../ApplicationStore/vehicles/acti
 import { selectCarsByDest } from '../../../../ApplicationStore/vehicles/selectors/selectors';
 import { Car } from '../../../../models/Car';
 import { Subscription } from 'rxjs';
+import { CarListItemComponent } from '../../../../Shared/components/car-list-item/car-list-item.component';
 
 @Component({
   selector: 'app-location-car-list',
   standalone: true,
-  imports: [],
+  imports: [CarListItemComponent],
   templateUrl: './location-car-list.component.html',
   styleUrl: './location-car-list.component.scss',
 })
